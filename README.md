@@ -1,2 +1,0 @@
-# MFE
-MicroFrontEnd applications
