@@ -1,4 +1,6 @@
 import FeedoLayout from './components/view/FeedoLayout';
+import "./App.css";
+
 
 function App() {
   return (
