@@ -2,9 +2,14 @@ import FeedoLayout from './components/view/FeedoLayout';
 
 function App() {
   return (
-    <>
-      <FeedoLayout></FeedoLayout>
-    </>
+
+    <div className="App">
+
+      Simple application for catpuring the feedbacks.   Branch1  Praveen kumar accepted your invitations
+      Adding branch
+
+    </div>
+
   );
 }
 
