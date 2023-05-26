@@ -1,3 +1,4 @@
+
 import FeedoFooter from "./FeedoFooter";
 import FeedoHeader from "./FeedoHeader";
 import FeedoContent from "./FeedoContent";
@@ -21,3 +22,4 @@ function FeedoLayout() {
 }
 
 export default FeedoLayout;
+
