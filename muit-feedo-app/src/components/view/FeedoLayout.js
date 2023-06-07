@@ -18,6 +18,5 @@ function FeedoLayout() {
     </>
   );
 }
-
 export default FeedoLayout;
 
