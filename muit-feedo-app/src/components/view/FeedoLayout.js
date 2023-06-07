@@ -14,8 +14,6 @@ function FeedoLayout() {
         <FeedoHeader></FeedoHeader>
         <hr></hr>
         <FeedoContent></FeedoContent>
-        <FeedoFooter></FeedoFooter>
-        
       </Container>
     </>
   );

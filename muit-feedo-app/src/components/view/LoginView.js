@@ -14,13 +14,15 @@ function LoginView() {
         </Form.Group>
         <Form.Group className="mb-3" controlId="feedoPassword">
           <Form.Label>Email address</Form.Label>
-          <Form.Control type="password" placeholder="Enter password" />          
+          <Form.Control type="password" placeholder="Enter password" />
         </Form.Group>
         <Stack>
-           <Button variant="primary">Login</Button>
-           <Button variant="outline-secondary">Sign In?</Button>
-           <div>Forgot password? Reset <a href="#retrivePwd">Here </a> </div>
-        </Stack>        
+          <Button variant="primary">Login</Button>
+          <Button variant="outline-secondary">Sign In?</Button>
+          <div>
+            Forgot password? Reset <a href="#retrivePwd">Here </a>{" "}
+          </div>
+        </Stack>
       </Form>
     </>
   );
