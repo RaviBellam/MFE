@@ -1,10 +1,11 @@
 import Form from "react-bootstrap/Form";
 import Stack from "react-bootstrap/Stack";
 import Button from "react-bootstrap/Button";
+import '../../styles/login.css';
 function LoginView() {
   return (
     <>
-      <Form>
+      <Form className="backtheme">
         <Form.Group className="mb-3" controlId="feedoMail">
           <Form.Label>Email address</Form.Label>
           <Form.Control type="email" placeholder="Enter email" />
