@@ -14,12 +14,9 @@ function FeedoLayout() {
         <FeedoHeader></FeedoHeader>
         <hr></hr>
         <FeedoContent></FeedoContent>
-        <FeedoFooter></FeedoFooter>
-        
       </Container>
     </>
   );
 }
-// test comment by praveen
 export default FeedoLayout;
 
