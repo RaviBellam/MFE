@@ -2,3 +2,10 @@
     background-color: whitesmoke;
     
 }
+.feedo-border{
+    border: 2px solid black;
+    margin:60px;
+    padding: 30px;
+    border-radius: 15px;
+  }
+  

@@ -1,28 +1,56 @@
 import Form from "react-bootstrap/Form";
 import Stack from "react-bootstrap/Stack";
 import Button from "react-bootstrap/Button";
+import Row from 'react-bootstrap/Row';
+import Container from 'react-bootstrap/Container';
+import Col from 'react-bootstrap/Col';
+import Image from 'react-bootstrap/Image';
 import '../../styles/login.css';
 function LoginView() {
   return (
     <>
+    <div >
+    <Container className= "col-md-1 mx-auto" >
+      <Row>
+        <Col xs={10} md={8}>
+          <Image src="https://www.pngfind.com/pngs/m/70-704328_edit-page-icon-transparent-index-icon-hd-png.png" thumbnail/>
+          
+          </Col>
+      </Row>
+    </Container>
+    <div className= "col-md-2 mx-auto">User name or email address</div> 
+    </div>
+    <div className = "feedo-border col-md-6 mx-auto">
       <Form className="backtheme">
-        <Form.Group className="mb-3" controlId="feedoMail">
-          <Form.Label>Email address</Form.Label>
-          <Form.Control type="email" placeholder="Enter email" />
-          <Form.Text className="text-muted">
-            We'll never share your email with anyone else.
-          </Form.Text>
+        <Form.Group  controlId="feedoMail">
+          <Form.Label>User name or email address</Form.Label>
+            <Form.Control type="email" placeholder="Enter email" />
+              <Form.Text className="text-muted">
+                We'll never share your email with anyone else.
+              </Form.Text>
         </Form.Group>
-        <Form.Group className="mb-3" controlId="feedoPassword">
-          <Form.Label>Email address</Form.Label>
-          <Form.Control type="password" placeholder="Enter password" />          
+        
+        <Form.Group  controlId="feedoPassword">
+          <Container>
+            <Row>
+              <Col>Password</Col>
+              <Col></Col>
+              <Col>Forgot password?</Col>
+            </Row>       
+          </Container> 
+          <Form.Control type="password" placeholder="Enter password" /> <br />
         </Form.Group>
+      
         <Stack>
-           <Button variant="primary">Login</Button>
-           <Button variant="outline-secondary">Sign In?</Button>
-           <div>Forgot password? Reset <a href="#retrivePwd">Here </a> </div>
+           <Button variant="primary">Sign In</Button>
         </Stack>        
       </Form>
+    </div>
+      <div className = " col-md-6 mx-auto">
+        <Stack>
+          <Button variant="outline-dark">New to Feedo? Create an account</Button>
+        </Stack>
+      </div>
     </>
   );
 }
