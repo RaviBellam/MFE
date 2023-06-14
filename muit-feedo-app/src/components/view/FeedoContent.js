@@ -1,10 +1,10 @@
-function FeedoContent(){
-    return(
-        <>
-            <div>
-                This is the main content of the feedo application like surveys and their questions will be dispalyed here.
-            </div>
-        </>
+import FeedoHeader from './FeedoHeader';
+
+function FeedoContent() {
+    return (
+        <div className='feedo-center'>
+            <FeedoHeader></FeedoHeader>
+        </div>
     );
 }
 export default FeedoContent;

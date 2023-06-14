@@ -3,12 +3,12 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import LoginView from './components/view/LoginView';
+import FeedoContent from './components/view/FeedoContent';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <LoginView />
+    <FeedoContent />
   </React.StrictMode>
 );
 
