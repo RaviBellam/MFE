@@ -8,7 +8,7 @@ import FeedoContent from './components/view/FeedoContent';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <FeedoContent />
+    <LoginView />
   </React.StrictMode>
 );
 
