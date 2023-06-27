@@ -1,6 +1,7 @@
 import FeedoLayout from './components/view/FeedoLayout';
 import "./App.css";
 import FeedoFooter from './components/view/FeedoFooter';
+import LoginView from './components/view/LoginView';
 
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
     <div className="App">
         <FeedoLayout></FeedoLayout>
         <FeedoFooter></FeedoFooter>
+        
     </div>
 
   );

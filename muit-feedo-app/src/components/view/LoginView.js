@@ -10,17 +10,17 @@ function LoginView() {
   return (
     <>
     <div >
-    <Container className= "col-md-1 mx-auto" >
+    <Container  >
       <Row>
-        <Col xs={10} md={8}>
+        <Col  className= "col-3 mx-auto">
           <Image src="https://www.pngfind.com/pngs/m/70-704328_edit-page-icon-transparent-index-icon-hd-png.png" thumbnail/>
           
           </Col>
       </Row>
     </Container>
-    <div className= "col-md-2 mx-auto">User name or email address</div> 
+    <div className= "col-md-4 mx-auto">User name or email address</div> 
     </div>
-    <div className = "feedo-border col-md-6 mx-auto">
+    <div className = "feedo-border col-md-8 mx-auto">
       <Form className="backtheme">
         <Form.Group  controlId="feedoMail">
           <Form.Label>User name or email address</Form.Label>
@@ -33,9 +33,9 @@ function LoginView() {
         <Form.Group  controlId="feedoPassword">
           <Container>
             <Row>
-              <Col>Password</Col>
-              <Col></Col>
-              <Col>Forgot password?</Col>
+              <Col className="col-4">Password</Col>
+              <Col className="col-2"></Col>
+              <Col className="col-6"> <Button variant="light">Forgot password?</Button></Col>
             </Row>       
           </Container> 
           <Form.Control type="password" placeholder="Enter password" /> <br />
