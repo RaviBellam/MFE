@@ -1,6 +1,7 @@
 import Button from "react-bootstrap/Button";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import { Link } from 'react-router-dom';
 import Table from "react-bootstrap/Table";
 import FeedoSurveysList from "./FeedoSurveysList";
 import React, { useState } from "react";
@@ -27,7 +28,7 @@ function FeedoHeader() {
                                     <span> to see them.</span>
                                 </td>
                                 <td>
-                                    <Button variant="outline-primary">Create Servey</Button>
+                                    <Link to = "/FeedoCreateSurveyPage"><Button variant="outline-primary">Create Servey</Button></Link>
                                 </td>
                             </tr>
                         </tbody>

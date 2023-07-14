@@ -4,8 +4,55 @@
 }
 .feedo-border{
     border: 2px solid black;
-    margin:60px;
+    margin-bottom:30px;
+    margin-top: 5px;
     padding: 30px;
     border-radius: 15px;
   }
-  
+  .logo{
+    height: 90px;
+    width: 90px;
+    background-color: #ffffff;
+    margin-top: 20px;
+    
+  }
+  .sub-button{
+    width: 80px;
+    align-self: center;
+    margin: 10px;
+    
+  }
+  .feedo-border-forget{
+    border: 2px solid black;
+    margin-bottom:30px;
+    margin-top: 40px;
+    padding: 30px;
+    border-radius: 15px;
+
+  }
+  .sub-Link{
+    color:#ffffff !important;
+    
+  }
+  .button:hover {
+    background:none !important;
+  }
+  .button-sub:hover {
+    background:rgb(0, 85, 255);
+   
+  }
+  .forget-pass{
+    color:black;
+    text-decoration: none;
+  }
+  .form-text{
+    font-size: 12px;
+  }
+  .cancel-link{
+    color:#ffffff !important;
+    text-decoration: none;
+  }
+  .cancel-link-two{
+    color:black !important;
+    text-decoration: none;
+  }
