@@ -5,54 +5,93 @@ import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
+import { Link } from 'react-router-dom';
 import '../../styles/login.css';
+import swal from 'sweetalert';
+import React from 'react';
+
+
 function LoginView() {
+
+  const Alert = () => {
+    swal({
+      title: "your feedo login completed sucessfully!",
+      icon: "success",
+      
+    });
+  }
+
   return (
     <>
-    <div >
+    
+    <div className = " col-8 mx-auto">
     <Container  >
       <Row>
-        <Col  className= "col-3 mx-auto">
-          <Image src="https://www.pngfind.com/pngs/m/70-704328_edit-page-icon-transparent-index-icon-hd-png.png" thumbnail/>
+        <Col className= " col-md-4"></Col>
+        <Col  className= " col-md-4 col-sm-4 col-11 mx-auto logo">
+          <Image src ="https://www.pngfind.com/pngs/m/70-704328_edit-page-icon-transparent-index-icon-hd-png.png" thumbnail />
           
           </Col>
+          <Col className= " col-md-4"></Col>
+      </Row>
+      <Row>
+        <Col className= " col-4 "></Col>
+        <Col  className= " col-8 mx-auto">
+        <p >Sign into Feedo</p>
+          </Col>
+          
       </Row>
     </Container>
-    <div className= "col-md-4 mx-auto">User name or email address</div> 
     </div>
-    <div className = "feedo-border col-md-8 mx-auto">
-      <Form className="backtheme">
+    <div className = "feedo-border col-8 mx-auto backtheme">
+      <Form  >
+      
         <Form.Group  controlId="feedoMail">
-          <Form.Label>User name or email address</Form.Label>
-            <Form.Control type="email" placeholder="Enter email" />
-              <Form.Text className="text-muted">
+        <Container>
+            <Row>
+          <Col className="col-md-12"><Form.Label> User name or email </Form.Label></Col>
+            <Form.Control type="email" placeholder="User name or email" required/>
+              <Form.Text className="text-muted form-text">
                 We'll never share your email with anyone else.
               </Form.Text>
+              </Row>       
+          </Container> 
         </Form.Group>
         
-        <Form.Group  controlId="feedoPassword">
-          <Container>
+        <Form.Group  controlId="feedoPassword" >
+        <Container>
             <Row>
-              <Col className="col-4">Password</Col>
-              <Col className="col-2"></Col>
-              <Col className="col-6"> <Button variant="light">Forgot password?</Button></Col>
-            </Row>       
+              <Col className=" col-sm-2 col-md-4 " >Password</Col>
+              <Col className="col-sm-2 col-md-4 "></Col>
+              <Col className=" col-sm-8 col-md-4 "> 
+              <Link  to = '/ForgotPassword' className="forget-pass">Forgot password?</Link></Col>
+              </Row>       
           </Container> 
-          <Form.Control type="password" placeholder="Enter password" /> <br />
+          <Form.Control type="password" placeholder="Enter password" required/> <br />
+         
         </Form.Group>
-      
+       
         <Stack>
-           <Button variant="primary">Sign In</Button>
+           <Button variant="primary" onClick={Alert} > Sign In</Button>
+           
         </Stack>        
       </Form>
+      
     </div>
-      <div className = " col-md-6 mx-auto">
+      <div >
         <Stack>
-          <Button variant="outline-dark">New to Feedo? Create an account</Button>
+        <Link className="cancel-link-two  button col-8 mx-auto "   >
+          <Button variant="outline-dark" className=" col-12">New to Feedo? Create an account</Button></Link>
         </Stack>
-      </div>
+        </div>
+        
     </>
   );
+  
+  
 }
-
 export default LoginView;
+
+
+
+
