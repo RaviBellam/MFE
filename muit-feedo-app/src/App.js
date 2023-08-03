@@ -12,12 +12,12 @@ function App() {
   return (
 
     <div className="App">
-      {/*<BrowserRouter>
-      <Routes>
-        <Route path ='/' element = {<LoginView />} />
-        <Route path ='/forgotPassword' element = {<ForgotPassword />} />
-      </Routes>
-  </BrowserRouter>*/}
+      <BrowserRouter>
+        <Routes>
+          <Route path ='/' element = {<LoginView />} />
+          <Route path ='/forgotPassword' element = {<ForgotPassword />} />
+        </Routes>
+      </BrowserRouter>
         {/*<FeedoLayout></FeedoLayout>
         <FeedoFooter></FeedoFooter>*/}
         <LoginView></LoginView>
